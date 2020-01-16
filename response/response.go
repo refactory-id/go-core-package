@@ -5,9 +5,9 @@ type BaseResponse struct {
 	Message string `json:"message"`
 }
 
-func SetMessage(message string, success bool) BaseResponse {
+func SetMessage(msg string, scss bool) BaseResponse {
 	return BaseResponse{
-		Message: message,
-		Success: success,
+		Message: msg,
+		Success: scss,
 	}
 }
